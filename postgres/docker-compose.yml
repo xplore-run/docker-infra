@@ -1,0 +1,18 @@
+version: "3.8"
+services: 
+  postgres:
+    image: postgres
+    container_name: postgres
+    # restart: always
+    environment: 
+      POSTGRES_USER: pgadmin
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: pgdb
+    # command:
+    #   - "postgres"
+    #   - "-c"
+    #   - "wal_level=logical"
+    ports: 
+      - 25432:5432
+    volumes: 
+      - $HOME/dockerData/pgData/:/var/lib/postgresql/data

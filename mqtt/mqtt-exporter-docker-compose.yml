@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mqtt-exporter:
+    image: kpetrem/mqtt-exporter
+    ports:
+      - 9000:9000
+    environment:
+      - MQTT_ADDRESS=mqtt-dev.oyerick.com
+      - MQTT_USERNAME=akash
+      - MQTT_PASSWORD=ubuntu@mosquitto
+      - MQTT_TOPIC=$SYS/#
+    restart: unless-stopped
