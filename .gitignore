@@ -1,9 +1,8 @@
-mongodb-cluster/mongo1_data/*
-mongodb-cluster/mongo2_data/*
-mongodb-cluster/mongo3_data/*
+mongodb-cluster/*_data
+mongodb-cluster/*_data/*
 mongodb-cluster/rs_keyfile
 kafka/kafka_2.13-3.8.0/*
 clickhouse/bin/*
 # !clickhouse/bin/clickhouse
-
 ignore
+.DS_Store
