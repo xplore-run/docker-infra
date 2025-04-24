@@ -6,3 +6,5 @@ clickhouse/bin/*
 # !clickhouse/bin/clickhouse
 ignore
 .DS_Store
+
+scylladb/scylla_data
